@@ -41,7 +41,7 @@ body {
 	float: left;
 }
 .camisa-pages a,.camisa-pages a:link,.camisa-pages a:visited {
-	color: #ff5c5c;
+	color: #7D6946;
 	text-decoration: none;
 }
 .camisa-pages a:hover {
@@ -144,7 +144,7 @@ form.camisa a.cancel,form.camisa a:link.cancel,form.camisa a:visited.cancel {
 form.camisa fieldset#page-info {
 	float: right;
 	width: 30%;
-	background: #ff8080;
+	background: #FFE79F;
 	color: #fff;
 	padding: 10px 1%;
 	font-size: 12px;
@@ -179,7 +179,7 @@ form.camisa-login input {
 
 /* dashboard */
 #camisa-dashboard {
-	background: #ff8080 url(../images/camisa-logo.png) top right no-repeat;
+	background: #FFE79F url(../images/camisa-logo.png) top right no-repeat;
 	color: #fff;
 	height: 80px;
 	margin-bottom: 40px;
