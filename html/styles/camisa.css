@@ -1,0 +1,253 @@
+/* general */
+body {
+	font-family: arial,sans-serif;
+	color: #333;
+}
+
+/* pages */
+.camisa-pages {
+	border: #cbcbcb solid 1px;
+	xborder-top: none;
+	background: #ededed;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 600px;
+}
+
+.camisa-pages ul {
+	border-left: #cbcbcb solid 1px;
+}
+
+.camisa-pages li {
+	list-style: none;
+	border-top: #cbcbcb solid 1px;
+	margin: 0;
+	padding: 5px 0 0 10px;
+	line-height: 1;
+	clear: both;
+	overflow: hidden;
+}
+
+.camisa-pages li ul {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	width: 100%;
+}
+
+.camisa-pages a {
+	font-size: 18px;
+	float: left;
+}
+.camisa-pages a,.camisa-pages a:link,.camisa-pages a:visited {
+	color: #ff5c5c;
+	text-decoration: none;
+}
+.camisa-pages a:hover {
+	text-decoration: underline;
+}
+
+.camisa-page-status {
+	background: #b2b2b2;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 9px;
+	margin: 0 5px;
+	padding: 5px;
+	float: left;edf2f7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.camisa-pages .camisa-buttons {
+	overflow: hidden;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.camisa-pages .camisa-buttons a,.camisa-pages .camisa-buttons a:link,.camisa-pages .camisa-buttons a:visited {
+	border: #c8c8c8 solid 1px;
+	color: #6a6c74;
+	margin: 0 5px;
+	padding: 5px;
+	font-size: 10px;
+	text-decoration: none;
+}
+
+.camisa-pages .camisa-buttons a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* forms */
+form.camisa legend {
+	display: none;
+}
+
+form.camisa fieldset {
+	margin: 0;
+	padding: 0;
+	width: 66%;
+	float: left;
+	border: none;
+}
+
+form.camisa #title {
+	width: 70%;
+}
+
+form.camisa input,form.camisa textarea {
+	padding: 3px;
+	border: #cbcbcb solid 1px;
+	webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+form.camisa input:focus,form.camisa textarea:focus {
+	background: #edf2f7;
+	border: #2b98d6 solid 2px;
+}
+
+form.camisa input {
+	font-size: 20px;
+}
+
+form.camisa label {
+	font-size: 12px;
+	color: #999;
+	font-weight: bold;
+}
+
+form.camisa label.hidden {
+	display: none;
+}
+
+form.camisa textarea {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+form.camisa select {
+	font-size: 14px;
+	width: auto;
+}
+
+form.camisa a.cancel,form.camisa a:link.cancel,form.camisa a:visited.cancel {
+	color: #666
+}
+
+form.camisa fieldset#page-info {
+	float: right;
+	width: 30%;
+	background: #ff8080;
+	color: #fff;
+	padding: 10px 1%;
+	font-size: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+form.camisa fieldset#page-info label {
+	color: #fff;
+	display: block;
+	margin: 6px 0;
+}
+
+form.camisa fieldset#page-info a,#page-info a:link,#page-info a:visited {
+	color: #fff;
+}
+
+form.camisa fieldset#page-info p {
+	font-size: 10px;
+	margin: 0;
+	float: right;
+}
+
+form.camisa-login {
+	margin: 30px 0;
+}
+
+form.camisa-login input {
+	font-size: 14px;
+}
+
+/* dashboard */
+#camisa-dashboard {
+	background: #ff8080 url(../images/camisa-logo.png) top right no-repeat;
+	color: #fff;
+	height: 80px;
+	margin-bottom: 40px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#camisa-dashboard h2 {
+	margin: 0 0 10px 0;
+	padding: 0;
+	font-size: 24px;
+}
+
+/* buttons */
+.camisa-buttons {
+	overflow: hidden;
+	list-style: none; solid;
+	margin: 0;
+	padding: 0;
+	zoom: 1;
+	display: relative;
+	width: auto;
+}
+
+.camisa-buttons li {
+	float: left;
+	margin-right: 10px;
+}
+
+.camisa-buttons a,.camisa-buttons a:link,.camisa-buttons a:visited,.camisa-button,form.camisa input.camisa-button {
+	background: #d3d7da url(../images/button.png) 0 50% repeat-x;
+	color: #6a6c74;
+	display: inline-block;
+	padding: 6px 8px;
+	margin: 0;
+	font-weight: bold;
+	font-size: 14px;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.camisa-buttons a:hover,.camisa-button:hover,form.camisa input.camisa-button:hover {
+	background: #38a3d9 url(images/button.png) 0 50% repeat-x;
+	color: #fff;
+	text-decoration: none;
+}
+
+a.camisa-button {
+	float: left;
+	border: #c8c8c8 solid 1px;
+	margin: 5px 10px;
+}
+
+a:hover.camisa-button {
+	background-color: #63d847;
+}
+
+.camisa-buttons a:hover.camisa-edit-button {
+	background-color: #faef39;
+}
+
+.camisa-buttons a:hover.camisa-add-button {
+	background-color: #63d847;
+}
+
+.camisa-buttons a:hover.camisa-delete-button {
+	background-color: #d74741;
+}
