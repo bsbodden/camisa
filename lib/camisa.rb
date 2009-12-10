@@ -200,10 +200,10 @@ module Camisa
   # -- Show Page --
   # Displays the content pages
   class ShowPage < Trellis::Page
-    route '/:permalink'
+    route '/*'
     
     def get
-      @site_page = @permalink ? Model::Page.first(:permalink => @permalink) : Model::Page.roots.published.first
+      @site_page = @splat.first.empty? ? Model::Page.roots.published.first : Model::Page.first(:permalink => @splat)
       @site_page ? self : redirect("/admin/pages")
     end
   
