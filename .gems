@@ -1,4 +1,4 @@
-trellis --version '>= 0.0.8'
+trellis --version '>= 0.0.9'
 dm-core --version '>=0.10.1'
 dm-validations --version '>=0.10.1'
 dm-timestamps --version '>=0.10.1'
