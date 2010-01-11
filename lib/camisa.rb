@@ -200,7 +200,7 @@ module Camisa
   	    <label for="name">Username:</label>
   	    <trellis:text_field tid="name" id="name" />
   	    <label for="password">Password:</label>
-  	    <trellis:text_field tid="password" id="password" />
+  	    <trellis:password tid="password" id="password" />
   	    <trellis:submit tid="add" value="Login">
       </trellis:form>   
     ], :format => :html, :layout => :main
