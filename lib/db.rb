@@ -15,7 +15,7 @@ module Model
     
     # Properties
     property :id,           Serial
-    property :title,        String,   :nullable => false, :default => "Title"
+    property :title,        String,   :required => true, :default => "Title"
     property :permalink,    String,   :default => Proc.new { |r, p| r.slug }
     property :content,      Text,     :default => "Enter some content here"
     property :created_at,   DateTime

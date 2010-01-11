@@ -77,6 +77,15 @@ module Camisa
       page.updated_at ? page.updated_at.strftime("<p>Last updated at %I:%M%p on %d %B %Y</p>") : ""
     end
     
+    def pages_except(page)
+      all_pages = Model::Page.all 
+      if page.new_record?
+        all_pages
+      else 
+        all_pages - [page]
+      end
+    end
+    
     partial :page, %[
       <li id="page_@{ @site_page.id }@" class="page">
         <span class="camisa-page-status">@{ @site_page.published? ? @site_page.updated_at.strftime("%d %b %y") : "DRAFT" }@</span>
@@ -117,7 +126,7 @@ module Camisa
         <label for="parent_id">Section:
         <select id="parent_id" name="page[parent_id]">
           <option value="">Main Section</option>
-          <?rb (Model::Page.all - [@site_page]).each do |parent| ?>
+          <?rb pages_except(@site_page).each do |parent| ?>
             <option value="@{ parent.id }@" selected="@{ section_selected(@site_page, parent) }@">
               @{ parent.title }@
             </option>
@@ -279,7 +288,7 @@ module Camisa
         
     template %[
       <trellis:form tid="new" method="post" class="camisa">
-         @!{ render_partial(:page_form, {:site_page, @site_page}) }@
+        @!{ render_partial(:page_form, {:site_page, @site_page}) }@
       </trellis:form>
     ], :format => :eruby, :layout => :main
   end
@@ -296,7 +305,6 @@ module Camisa
     def on_submit_from_edit
       site_page = Model::Page.get(@id)
       site_page.show_title = false unless params[:show_title]
-      #site_page.published_at = params[:publish] ?  Time.now : nil    
       
       if site_page.update(params[:page])
         redirect site_page.path

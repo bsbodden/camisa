@@ -180,7 +180,7 @@ form.camisa-login input {
 /* dashboard */
 #camisa-dashboard {
 	background: #FFE79F url(../images/camisa-logo.png) top right no-repeat;
-	color: #fff;
+	color: #333;
 	height: 80px;
 	margin-bottom: 40px;
 	padding: 10px;
