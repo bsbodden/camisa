@@ -6,3 +6,4 @@ nbproject
 .DS_Store
 Thumbs.db
 **/.svn
+db/camisa.db
